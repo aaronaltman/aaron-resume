@@ -3,23 +3,25 @@ import Link from "next/link";
 const PrimaryNavigation = () => {
   return (
     <div>
-      <ul>
-        <li>
+      <ul className="flex flex-col p-8 md:flex-row">
+        <li className="p-2">
           <Link href="/">
-            <a>Home</a>
+            <p>Home</p>
           </Link>
         </li>
-        <li>
+        <li className="p-2">
           <Link href="/about">
-            <a>About</a>
+            <p>About</p>
           </Link>
         </li>
-        <li>
+        <li className="p-2">
           <Link href="/contact">
-            <a>Contact</a>
+            <p>Contact</p>
           </Link>
         </li>
       </ul>
     </div>
   );
 };
+
+export default PrimaryNavigation;
